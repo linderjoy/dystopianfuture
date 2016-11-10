@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="description" content="Your new dystopian future: Welcome to the winter of your discontent">
 		<meta name="keywords" content="Trump, terror, fortune-telling">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<title>Dystopian Future</title>
 		
@@ -110,15 +111,15 @@
 
 			var tone = tones[randomize(tones)];
 
-			document.write("<div id='fortune'><h1>Your new dystopian future</h1><h4>Welcome to the winter of your discontent</h4><hr><p>On or about January 20th... <br> <strong>")
+			document.write("<div id='fortune'><h1>Your new dystopian future</h1><h4>Welcome to the winter of your discontent</h4><hr><p>On or about January 20th... <br> ")
 
 			if ( tone === 'a' ) {
-				document.write(" " + institution + "</strong> will <strong>" + disaster + "</strong>");
+				document.write(" " + institution + " will " + disaster );
 			} else {
-				document.write(" " + nefInstitution + "</strong> will <strong>" + fortune + "</strong>");
+				document.write(" " + nefInstitution + " will " + fortune );
 			}
 
-			document.write('<br><br><br><button class="btn" onClick="window.location.reload()">Tell me more</button>')
+			document.write('<br><br><button class="btn" onClick="window.location.reload()">Tell me more</button>')
 			document.write("</div>");
 		
 
