@@ -54,16 +54,12 @@ h4 {
 
 #fortune {
 	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	width:80%;
+	left: 10%;
+	top:100px;
 }
 
-@media (max-width: 600px) {
-  #fortune {
-    width:80%;
-  }
-}
+
 
 .btn {
 	border-radius: 8px;
@@ -78,6 +74,13 @@ h4 {
 	border: lightgray;
 }
 
-
+@media (min-width: 600px) {
+	
+  #fortune {    
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+  }
+}
 
 
