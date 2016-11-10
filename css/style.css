@@ -87,6 +87,7 @@ h4 {
 	}
 
   #fortune {    
+  	margin:0;
   	width: auto;
     max-width: 600px;	
   	position: absolute;

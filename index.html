@@ -20,32 +20,31 @@
 				'the economy',
 				'the Department of Education',
 				'the FBI',
-				'the free press',
 				'science', 	
 				'Congress',
 				'alternative energy',
 				'the Senate',
-				'liberal media',
+				'the liberal media',
 				'radical thought',
 				'Russia',
 				'Bernie Sanders',
 				'Elizabeth Warren',
 				'all of the jobs',
 				'China',
-				'domestic prosperity',
+				'the working class',
 				'Planned Parenthood'
 			];
 
 
 			// Bad fortunes
-			var disasters = [
+			var badFortunes = [
 				'implode',
 				'be deported',
-				'be locked up',
+				'be sent to Guantanamo',
 				'spontaneously combust',
 				'go bankrupt',
 				'collapse',
-				'be outlawed',
+				'be put on a terror watchlist',
 				'self-destruct',
 				'be fired',
 				'be broken on the wheel',
@@ -53,11 +52,11 @@
 				'be exiled to Mars',
 				'be be thrown in a wood chipper',
 				'fear the drones',
-				'be great again (jk)'
+				'be great again (JK)'
 			];
 
 			// Nefarious Instituions
-			var nefInstitutions = [
+			var nefariousInstitutions = [
 				'nefarious institutions',
 				'the secret police',
 				'predator drones',
@@ -74,7 +73,7 @@
 
 			// Good fortunes 
 			var fortunes = [
-				'be taught in schools',
+				'serve as Secretary of Education',
 				'be appointed to the Supreme Court',
 				'run the show',
 				'be in every home',
@@ -104,9 +103,9 @@
 			}
 			
 			var institution =  institutions[randomize(institutions)];
-			var disaster = disasters[randomize(disasters)];
+			var badFortune = badFortunes[randomize(badFortunes)];
 
-			var nefInstitution = nefInstitutions[randomize(nefInstitutions)];
+			var nefInstitution = nefariousInstitutions[randomize(nefariousInstitutions)];
 			var fortune = fortunes[randomize(fortunes)];
 
 			var tone = tones[randomize(tones)];
@@ -114,7 +113,7 @@
 			document.write("<div id='fortune'><h1>Your new dystopian future</h1><h4>Welcome to the winter of your discontent</h4><hr><p>On or about January 20th... <br> ")
 
 			if ( tone === 'a' ) {
-				document.write(" " + institution + " will " + disaster );
+				document.write(" " + institution + " will " + badFortune );
 			} else {
 				document.write(" " + nefInstitution + " will " + fortune );
 			}
